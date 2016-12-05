@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-datapipeline",
+  "version": "0.0.0-development",
+  "description": "Data pipeline ESLint configuration",
+  "keywords": [
+    "config",
+    "datapipeline",
+    "eslint",
+    "eslintconfig",
+    "javascript"
+  ],
+  "homepage": "https://github.com/DataPipelineInc/eslint-config-datapipeline#readme",
+  "bugs": {
+    "url": "https://github.com/DataPipelineInc/eslint-config-datapipeline/issues"
+  },
+  "license": "MIT",
+  "author": "VincentBel (https://github.com/VincentBel)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DataPipelineInc/eslint-config-datapipeline.git"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "semantic-release": "^6.3.2"
+  },
+  "peerDependencies": {
+    "eslint": "^3.11.1"
+  }
+}
