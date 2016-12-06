@@ -4,6 +4,15 @@ module.exports = {
     './node.js',
   ].map(require.resolve),
   rules: {
+    'comma-dangle': ['error', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      // Enable function comma-dangle because babel will drop it for us
+      // <https://github.com/babel/babel/blob/master/packages/babel-plugin-syntax-trailing-function-commas>
+      functions: 'always-multiline',
+    }],
     // Disable it because it is really hard to obey.
     // <https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md>
     'jsx-a11y/no-static-element-interactions': 'off',

@@ -17,6 +17,15 @@ module.exports = {
     'arrow-body-style': 'off',
     // Disabled because it is silly sometimes
     'class-methods-use-this': 'off',
+    'comma-dangle': ['error', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      // Disable function comma-dangle because it's an es6 feature,
+      // and not work on node.js
+      functions: 'never',
+    }],
     // Allow using devDependencies because it is hard to tell what files
     // are used only for dev.
     'import/no-extraneous-dependencies': ['error', { devDependencies: true, optionalDependencies: false }],
