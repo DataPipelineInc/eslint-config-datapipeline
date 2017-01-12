@@ -16,6 +16,8 @@ module.exports = {
     // Disable it because it is really hard to obey.
     // <https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md>
     'jsx-a11y/no-static-element-interactions': 'off',
+    // allow console in node
+    'no-console': 'warn',
     // <https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md>
     'react/forbid-prop-types': ['off', { forbid: ['any', 'array', 'object'] }],
     // Although this is a very helpful rule, but it has very many false positives,

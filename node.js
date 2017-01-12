@@ -35,6 +35,8 @@ module.exports = {
     'import/no-webpack-loader-syntax': 'off',
     // We didn't prefer default export
     'import/prefer-default-export': 'off',
+    // allow console in node
+    'no-console': 'off',
     'no-mixed-operators': 'off',
     // Nested ternay isn't so unreadable
     'no-nested-ternary': 'off',
