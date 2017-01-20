@@ -6,6 +6,10 @@ module.exports = {
 
   parser: 'babel-eslint',
 
+  env: {
+    browser: true,
+  },
+
   rules: {
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
