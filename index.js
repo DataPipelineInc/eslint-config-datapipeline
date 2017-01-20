@@ -3,6 +3,9 @@ module.exports = {
     'eslint-config-airbnb',
     './node.js',
   ].map(require.resolve),
+
+  parser: 'babel-eslint',
+
   rules: {
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
