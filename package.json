@@ -20,6 +20,10 @@
     "type": "git",
     "url": "https://github.com/DataPipelineInc/eslint-config-datapipeline.git"
   },
+  "files": [
+    "index.js",
+    "node.js"
+  ],
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "lint": "eslint .",
