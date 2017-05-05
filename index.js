@@ -37,6 +37,7 @@ module.exports = {
     // <https://github.com/yannickcr/eslint-plugin-react/issues/976>
     'react/no-unused-prop-types': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
+    'react/require-default-props': 'off',
     // <https://github.com/airbnb/javascript/blob/master/react/README.md#ordering>
     // Just a loose order, because we use a lot [es7 public fields](https://github.com/tc39/proposal-class-public-fields).
     // And the usage of `this.x`(x is also a field) in es7 public fields
