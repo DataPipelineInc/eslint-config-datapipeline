@@ -11,7 +11,7 @@ module.exports = {
     jest: true,
   },
 
-  global: {
+  globals: {
     __DEV__: false,
   },
 
