@@ -28,12 +28,21 @@ module.exports = {
     // Disable it because it is really hard to obey.
     // <https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md>
     'jsx-a11y/no-static-element-interactions': 'off',
+    // Set max-len to 80 to make [prettier](https://github.com/prettier/prettier)
+    // works better.
+    'max-len': ['error', 80, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
     // disallow console in browser
     'no-console': 'warn',
     // <https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md>
     'react/forbid-prop-types': ['off', { forbid: ['any', 'array', 'object'] }],
-    // Although this is a very helpful rule, but it has very many false positives,
-    // so disable it now
+    // Although this is a very helpful rule, but it has very many
+    // false positives, so disable it now.
     // <https://github.com/yannickcr/eslint-plugin-react/issues/976>
     'react/no-unused-prop-types': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],

@@ -35,6 +35,15 @@ module.exports = {
     'import/no-webpack-loader-syntax': 'off',
     // We didn't prefer default export
     'import/prefer-default-export': 'off',
+    // Set max-len to 80 to make [prettier](https://github.com/prettier/prettier)
+    // works better.
+    'max-len': ['error', 80, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
     // allow console in node
     'no-console': 'off',
     'no-mixed-operators': 'off',
