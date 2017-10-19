@@ -23,6 +23,6 @@ cd $GIT_REPO_NAME
 git pull
 
 npm install
-npm install ../../
+npm install --save-dev ../../
 
 npm run lint

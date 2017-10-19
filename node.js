@@ -26,6 +26,8 @@ module.exports = {
       // and not work on node.js
       functions: 'never',
     }],
+    // Disabled since we use prettier
+    'function-paren-newline': 'off',
     // Allow using devDependencies because it is hard to tell what files
     // are used only for dev.
     'import/no-extraneous-dependencies': ['error', { devDependencies: true, optionalDependencies: false }],
@@ -47,8 +49,10 @@ module.exports = {
     // allow console in node
     'no-console': 'off',
     'no-mixed-operators': 'off',
-    // Nested ternay isn't so unreadable
+    // Nested ternary isn't so unreadable
     'no-nested-ternary': 'off',
+    // Disabled since we use prettier
+    'object-curly-newline': 'off',
     semi: ['error', 'never'],
   },
 }
